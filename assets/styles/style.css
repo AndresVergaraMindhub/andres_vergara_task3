@@ -4,63 +4,79 @@
   margin: 0;
   color: rgb(1, 46, 4);
 }
-/*home*/
-.button-about {
-  display: none;
-}
 nav {
   display: flex;
-  background-color: rgb(1, 88, 59);
 }
 .ancor-container {
   display: flex;
 }
 .ancor-container a {
+  display: flex;
+  justify-content: center;
+  background-color: blueviolet;
   align-items: center;
-  padding: 0;
+  padding: 0.5rem;
   text-decoration: none;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
+  border-radius: 10px;
   font-weight: 600;
   color: whitesmoke;
-  margin-right: 1rem;
   margin: 1rem;
 }
+.ancor-container a:hover {
+  background-color: rgb(210, 165, 253);
+  color: rgb(77, 46, 77);
+}
+.ancor-container a:active {
+  transform: scale(0.9);
+}
 .related {
-  width: 8.9rem;
+  width: 10rem;
+}
+.main-home,
+.main-contact,
+.table-main,
+.related-main,
+.main-about {
+  height: 93vh;
+}
+.title-description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .img-container {
   display: flex;
   align-items: center;
-  width: 70vw;
+  width: 90vw;
   justify-content: flex-end;
 }
 .img-container img {
   width: 3.3rem;
   height: 2.8rem;
 }
-main {
-  height: 80vh;
+/*home*/
+.button-about {
+  display: none;
 }
 .sunflower-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 2rem;
+  padding-top: 1rem;
 }
-.sunflower-container .title {
-  margin-bottom: 0.5rem;
-}
+
 .sunflower-container .sunflower-img {
   width: 41rem;
   height: 20rem;
-  margin-top: 1rem;
 }
 .sunflower-img,
 .green {
   border-radius: 10px;
 }
-.green{
+.green {
   margin-left: 1rem;
 }
 .thanks-container {
@@ -75,17 +91,35 @@ main {
 .thanks-container .green {
   width: 20rem;
 }
-footer {
-  margin-top: 3.5rem;
+.home-footer,
+.about-footer,
+.contact-footer,
+.tables-footer,
+.related-footer {
+  height: 7vh;
+}
+.home-footer,
+.about-footer,
+.contact-footer,
+.related-footer,
+.tables-footer,
+span {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  color: whitesmoke;
+  background-color: rgb(84, 59, 99);
 }
 /*about*/
 .main-about {
-  margin-top: 1rem;
+  height: 95vh;
+  padding-top: 0.5rem;
 }
 .about-container {
   text-align: center;
   line-height: 2.5rem;
-  margin-top: 1rem;
 }
 .section-about {
   display: flex;
@@ -101,12 +135,11 @@ footer {
   margin-left: 5rem;
   display: flex;
   align-items: center;
-  background-color: rgb(2, 80, 54);
+  background-color: rgba(91, 20, 172, 0.267);
   height: 7rem;
   width: 20rem;
   padding: 1rem;
   border-radius: 10px;
-  color: whitesmoke;
 }
 .img-desc img {
   width: 15rem;
@@ -121,13 +154,7 @@ footer {
   margin-top: 1.5rem;
   font-weight: bold;
 }
-.about-footer {
-  margin-top: 5.5rem;
-}
 /*contact*/
-.main-contact {
-  margin-top: 0.5rem;
-}
 .contact-container {
   display: flex;
   flex-direction: column;
@@ -161,9 +188,6 @@ footer {
   margin-right: 2rem;
   text-decoration: none;
 }
-.contact-footer {
-  margin-top: 5.5rem;
-}
 /*tables*/
 table,
 th,
@@ -172,23 +196,20 @@ td {
   border-collapse: collapse;
 }
 .table-main {
+  padding-top: 1rem;
+}
+.table-section {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 80vh;
-  margin-top: 3rem;
 }
-.table-main,
-h1 p {
-  line-height: 2.5rem;
+.table-section,
+h1 {
+  padding-bottom: 0.25rem;
 }
-.table-main p {
-  font-size: 1.3rem;
-  margin-bottom: 1rem;
-}
-table {
-  border-radius: 10px;
+table caption {
+  padding-bottom: 1rem;
 }
 .price-th {
   width: 9rem;
@@ -212,18 +233,12 @@ tr td {
   text-align: center;
   font-size: 1.5rem;
 }
-.tables-footer {
-  width: 100%;
-}
 /*related products*/
-main {
-  margin-top: 2rem;
-}
 .section-related {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 80vh;
+  padding-top: 1rem;
 }
 .related-title h1,
 p {
@@ -245,10 +260,9 @@ ol li {
   margin-top: 0.5rem;
   margin-left: 2rem;
 }
+h2 {
+}
 ul,
 ol {
   margin-top: 0.5rem;
-}
-.related-footer {
-  margin-top: 5.3rem;
 }

@@ -2,6 +2,283 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
- 
+}
+/*nav-bar*/
+nav {
+  display: flex;
+}
+.ancor-container {
+  display: flex;
+}
+.ancor-container a {
+  display: flex;
+  justify-content: center;
+  background-color: blueviolet;
+  align-items: center;
+  padding: 0.5rem;
+  text-decoration: none;
+  font-size: 1.1rem;
+  border-radius: 10px;
+  font-weight: 600;
+  color: whitesmoke;
+  margin: 1rem;
+}
+.ancor-container a:hover {
+  background-color: rgb(210, 165, 253);
+  color: rgb(77, 46, 77);
+}
+.ancor-container a:active {
+  transform: scale(0.9);
+}
+.related {
+  width: 10rem;
+}
+.main-home,
+.main-contact,
+.table-main,
+.related-main,
+.main-about {
+  height: 93vh;
+}
+.title-description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.img-container {
+  display: flex;
+  align-items: center;
+  width: 90vw;
+  justify-content: flex-end;
+}
+.img-container img {
+  width: 3.3rem;
+  height: 2.8rem;
 }
 
+/*home*/
+.section-home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.sunflower-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 20rem;
+  bottom: 2rem;
+}
+.title-description {
+  color: whitesmoke;
+  position: relative;
+  top: 18rem;
+  font-weight: bold;
+  z-index: 3;
+}
+
+.button-about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: blueviolet;
+  color: whitesmoke;
+  text-decoration: none;
+  position: relative;
+  top: 1rem;
+  padding: 0.9rem;
+  left: 0.2rem;
+  font-size: 1.3rem;
+  border-radius: 10px;
+}
+.button-about:hover {
+  background-color: rgb(210, 165, 253);
+  color: rgb(77, 46, 77);
+}
+.button-about:active {
+  transform: scale(0.9);
+}
+.sunflower-container,
+.sunflower-img {
+  width: 50rem;
+  height: 20rem;
+}
+.background-sunflower {
+  width: 50rem;
+  height: 20rem;
+  position: absolute;
+  background-color: black;
+  top: 3rem;
+  z-index: 2;
+  opacity: 0.5;
+  border-radius: 10px;
+}
+.sunflower-img,
+.green {
+  border-radius: 10px;
+}
+.thanks-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  bottom: 3rem;
+  right: 11rem;
+  top: 3rem;
+}
+.thanks-description {
+  width: 22rem;
+  position: relative;
+  left: 26rem;
+  color: whitesmoke;
+  font-weight: bold;
+  text-align: center;
+  z-index: 3;
+  line-height: 1.5rem;
+}
+.thanks-container .green {
+  width: 30rem;
+  z-index: 1;
+}
+.background-green {
+  z-index: 2;
+  width: 30rem;
+  height: 269.89px;
+  position: absolute;
+  background-color: black;
+  right: 0rem;
+  border-radius: 10px;
+  opacity: 0.55;
+}
+.home-footer,
+.about-footer,
+.contact-footer,
+.tables-footer,
+.related-footer {
+  height: 7vh;
+}
+.home-footer,
+.about-footer,
+.contact-footer,
+.related-footer,
+.tables-footer,
+span {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  color: whitesmoke;
+  background-color: rgb(84, 59, 99);
+}
+/*about*/
+.main-about {
+  height: 95vh;
+  padding-top: 0.5rem;
+}
+.about-container {
+  text-align: center;
+  line-height: 2.5rem;
+}
+.section-about {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+}
+.img-desc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin: 1rem;
+}
+.img-desc p {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  background-color: rgba(91, 20, 172, 0.267);
+  height: 7rem;
+  width: 15rem;
+  height: 10rem;
+  padding: 0.5rem;
+  border-radius: 10px;
+  margin-top: 3rem;
+}
+.img-desc img {
+  width: 15rem;
+  height: 10rem;
+  border-radius: 10px;
+}
+.img-desc,
+.section-about {
+  margin-top: 1rem;
+  margin-left: 0.5rem;
+}
+.thanks {
+  display: none;
+}
+/*contact*/
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-top: 1rem;
+}
+.contact-talk {
+  z-index: 3;
+  position: relative;
+  top: 18rem;
+  font-size: 2rem;
+  font-weight: bold;
+  color: whitesmoke;
+}
+.img-sunday--container {
+  position: relative;
+  bottom: 6rem;
+}
+.sunday-img,
+.background-contact {
+  z-index: 1;
+  width: 55rem;
+  height: 26rem;
+  position: relative;
+  bottom: 6rem;
+}
+.background-contact {
+  z-index: 2;
+  position: absolute;
+  background-color: black;
+  opacity: 0.5;
+  bottom: 14.7rem;
+}
+.contact-text {
+  display: flex;
+}
+.contact-desc,
+.contact {
+  position: relative;
+  bottom: 2rem;
+}
+.contact-desc {
+  right: 5rem;
+  width: 20rem;
+}
+.contact {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  font-weight: 800;
+  line-height: 1.7rem;
+  left: 5rem;
+  bottom: 1rem;
+}
+.contact a {
+  margin-right: 2rem;
+  text-decoration: none;
+}
